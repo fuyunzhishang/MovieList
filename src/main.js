@@ -5,6 +5,8 @@ import App from './App'
 import router from './router'
 import toastr from 'toastr'
 import MuseUI from 'muse-ui'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-default/index.css'
 import Vodal from 'vodal'
 import axios from 'axios'
 import 'toastr/build/toastr.min.css'
@@ -14,6 +16,7 @@ import 'vodal/fade.css'
 /*
 Vue.config.productionTip = false*/
 Vue.use(MuseUI)
+/*Vue.use(ElementUI)*/
 Vue.prototype.$http = axios
 Vue.prototype.toastr = toastr
 Vue.component(Vodal.name, Vodal)
